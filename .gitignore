@@ -83,6 +83,6 @@ typings/
 .cache
 .next
 .nuxt
-.vuepress/dist
+docs/\.vuepress/dist
 .serverless
 .fusebox/
