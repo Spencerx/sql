@@ -1,5 +1,4 @@
 # DELETE FROM
-
 Delete will delete a certain row that met the `WHERE` condition.
 
 ```sql

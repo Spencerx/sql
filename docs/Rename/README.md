@@ -1,4 +1,4 @@
-# RENAME----------------------------------
+# RENAME 
 
 Change the name of the table
 ```sql
