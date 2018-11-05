@@ -5,7 +5,7 @@ module.exports = {
 
     // https://vuepress.vuejs.org/config/#head
     head: [
-        ['link', { rel: 'icon', href: 'logo.png' }]
+        ['link', { rel: 'icon', href: 'https://avatars1.githubusercontent.com/u/44744915?s=200&v=4' }]
     ],
 
     // https://vuepress.vuejs.org/config/#serviceworker
@@ -31,5 +31,13 @@ module.exports = {
             { text: 'Home', link: '/' },
             { text: 'Contribute', link: 'https://github.com/Kuma-Cheatsheet/' },
         ],
+
+        // https://vuepress.vuejs.org/theme/default-theme-config.html#last-updated
+        lastUpdated: 'Last Updated',
+
+        // https://vuepress.vuejs.org/theme/default-theme-config.html#service-worker
+        serviceWorker: {
+            updatePopup: true,
+        }
     }
 }
