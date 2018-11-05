@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SQL List
 This is a MySQL syntax. Some syntax is valid or have multiple alias.
 
@@ -47,3 +48,11 @@ This is a MySQL syntax. Some syntax is valid or have multiple alias.
 | **COMMIT**<br>`COMMIT`                            |   |
 | **ROLLBACK**<br>`ROLLBACK [checkpoint_name]`      |   |
 | **SAVEPOINT**<br>`SAVEPOINT [new_savepoint_name]` |   |
+=======
+# Welcome to core
+This is the core of all cheatsheet.
+
+If you would like to contribute and distrobute it through all cheatsheet, please make sure you are following the `CONTRIBUTE.md` guidelines. We will be updating it constantly.
+
+This vuepress is working on version 0.14.4 and we are ready to move up to 1.0 very soon.
+>>>>>>> fce3de360c3bcfac3626a9a50797821c64e6ba85

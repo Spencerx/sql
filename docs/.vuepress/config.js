@@ -87,6 +87,14 @@ module.exports = {
                     '/Savepoint/',
                 ]
             },
-        ]
+        ],
+
+        // https://vuepress.vuejs.org/theme/default-theme-config.html#last-updated
+        lastUpdated: 'Last Updated',
+
+        // https://vuepress.vuejs.org/theme/default-theme-config.html#service-worker
+        serviceWorker: {
+            updatePopup: true,
+        }
     }
 }
