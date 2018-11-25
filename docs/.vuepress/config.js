@@ -30,8 +30,10 @@ module.exports = {
     // https://vuepress.vuejs.org/theme/default-theme-config.html#sidebar
     themeConfig: {
         nav: [
-            { text: 'Home', link: '/' },
-            { text: 'Contribute', link: 'https://github.com/Kuma-Cheatsheet/' },
+            { text: 'Home',                         link: '/' },
+            { text: 'Contribute',                   link: 'https://github.com/Kuma-Cheatsheet/core/issues/' },
+            { text: 'Cheatsheet Collection',        link: 'https://github.com/Kuma-Cheatsheet/' },
+            { text: 'Documentation',                link: 'https://devdocs.io/' }
         ],
 
         sidebar: [
@@ -46,4 +48,4 @@ module.exports = {
             updatePopup: true,
         },
     }
-}%    
+}
