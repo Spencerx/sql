@@ -15,13 +15,22 @@ module.exports = {
 
     // https://vuepress.vuejs.org/config/#markdown
     markdown: {
-        lineNumbers: 'True'
+        lineNumbers: 'True',
     },
 
-    // https://vuepress.vuejs.org/plugin/official/plugin-pwa.html#install
+    // https://vuepress.vuejs.org/plugin/
     plugins: [
-        ['@vuepress/pwa'],
-        ['@vuepress/medium-zoom']
+        // https://vuepress.vuejs.org/plugin/official/plugin-pwa.html#install
+        ['@vuepress/pwa'], 
+        
+        // https://vuepress.vuejs.org/plugin/official/plugin-medium-zoom.html
+        ['@vuepress/medium-zoom'],
+        
+        // https://vuepress.vuejs.org/plugin/official/plugin-back-to-top.html
+        ['@vuepress/back-to-top'],
+        
+        // https://vuepress.vuejs.org/plugin/official/plugin-blog.html
+        ['@vuepress/blog'],
     ],
 
     // https://vuepress.vuejs.org/plugin/official/plugin-pwa.html#options
@@ -30,18 +39,18 @@ module.exports = {
     // https://vuepress.vuejs.org/theme/default-theme-config.html#sidebar
     themeConfig: {
         nav: [
-            { text: 'Home',                         link: '/' },
-            { text: 'Contribute',                   link: 'https://github.com/Kuma-Cheatsheet/core/issues/' },
-            { text: 'Cheatsheet Collection',        link: 'https://github.com/Kuma-Cheatsheet/' },
-            { text: 'Documentation',                link: 'https://devdocs.io/' }
+            { text: 'Home',         link: '/' },
+            { text: 'Contribute',   link: 'https://github.com/Kuma-Cheatsheet/core/issues/' },
+            { text: 'Collection',   link: 'https://github.com/Kuma-Cheatsheet/' },
+            { text: 'DevDocs',      link: 'https://devdocs.io/' }
         ],
 
         sidebar: [
-
+            // https://vuepress.vuejs.org/theme/default-theme-config.html#sidebar
         ],
 
         // https://vuepress.vuejs.org/theme/default-theme-config.html#last-updated
-        lastUpdated: 'Last Updated',
+        lastUpdated: 'อับเดทล่าสุด',
 
         // https://vuepress.vuejs.org/theme/default-theme-config.html#service-worker
         serviceWorker: {

@@ -3,8 +3,9 @@
 # abort on errors
 set -e
 
-# build
-npm run docs:build
+# build + make sure dependencies is installed
+yarn
+yarn docs:build
 
 # navigate into the build output directory
 cd docs/.vuepress/dist
@@ -14,7 +15,7 @@ cd docs/.vuepress/dist
 
 git init
 git add -A
-git commit -m 'deploy'
+git commit -m 'Website AutoDeploy'
 
 git push -f git@github.com:Kuma-Cheatsheet/core.git master:gh-pages
 
