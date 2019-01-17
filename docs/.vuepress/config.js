@@ -46,18 +46,17 @@ module.exports = {
                 items: [
                     {
                         text: 'Contribute', items: [
-                                { text: 'Report a problem', link: 'https://github.com/Kuma-Cheatsheet/core/issues/' },
-                                { text: 'Request new resource', link: 'https://github.com/Kuma-Cheatsheet/core/issues/' },
-                                { text: 'Contribute new resource', link: 'https://github.com/Kuma-Cheatsheet/core/' },
-                                { text: 'Development Board', link: 'https://github.com/Kuma-Cheatsheet/core/projects' },
-
-                            ]
+                            { text: 'Report a problem', link: 'https://github.com/Kuma-Cheatsheet/core/issues/' },
+                            { text: 'Request new resource', link: 'https://github.com/Kuma-Cheatsheet/core/issues/' },
+                            { text: 'Contribute new resource', link: 'https://github.com/Kuma-Cheatsheet/core/' },
+                            { text: 'Development Board', link: 'https://github.com/Kuma-Cheatsheet/core/projects' },
+                        ]
                     },
                     {
                         text: 'Guidelines', items: [
-                                { text: 'Contribution Guidelines', link: 'https://github.com/Kuma-Cheatsheet/core/blob/master/CONTRIBUTING.md' },
-                                { text: 'Licensing', link: 'https://github.com/Kuma-Cheatsheet/core/https://github.com/Kuma-Cheatsheet/core/blob/master/LICENSE.md/' },
-                            ]
+                            { text: 'Contribution Guidelines', link: 'https://github.com/Kuma-Cheatsheet/core/blob/master/CONTRIBUTING.md' },
+                            { text: 'Licensing', link: 'https://github.com/Kuma-Cheatsheet/core/https://github.com/Kuma-Cheatsheet/core/blob/master/LICENSE.md/' },
+                        ]
                     },
                 ]
             },
@@ -83,8 +82,8 @@ module.exports = {
                     },
                     {
                         text: 'Others', items: [
-                                { text: 'See all', link: 'https://github.com/Kuma-Cheatsheet' },
-                            ]
+                            { text: 'See all', link: 'https://github.com/Kuma-Cheatsheet' },
+                        ]
                     }
                 ]
             },
