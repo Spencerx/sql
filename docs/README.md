@@ -1,4 +1,10 @@
-# Welcome to SQL cheatsheet
-ใน cheatsheet นี้ เราได้รวมการใช้งานภาษา SQL ทั่วไป เพื่อให้สามารถนำไปใช้ได้กับ MySQL, PostgreSQL, LiteSQL และอิ่นๆ ได้อีกมากมาย
+---
+home: true
+heroImage: 'https://avatars1.githubusercontent.com/u/44744915'
+heroText: Welcome to SQL cheatsheet
+actionText: Get Started →
+actionLink: /Overall/Command/
+---
+In this cheatsheet, we have simplify the SQL language to let users learn how to code SQL, which can later applied to MySQL, PostgreSQL, LiteSQL and many more
 
-หากเพื่อนๆต้องการที่จะพัฒนา cheatsheet นี้ ก็สามารถช่วยได้ โดยการสร้าง Pull Request (เรียนรู้วิธีการช่วย contribute ได้ดังนี้)
+If you liked to help us improve this cheatsheet, checkout the 'Create new Issue' button in the Contribute tab.

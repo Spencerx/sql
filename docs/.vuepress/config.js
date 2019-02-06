@@ -1,8 +1,7 @@
 module.exports = {
+    // Global Variables + Edits
     // Make sure that base + repo are in correct cheatsheet
     base: '/sql/',
-    title: 'SQL Cheatsheet',
-    description: 'Cheatsheet for SQL',
 
     repo: 'Kuma-Cheatsheet/sql',
     repoLabel: 'Repository',
@@ -34,141 +33,316 @@ module.exports = {
         ['@vuepress/blog'],
     ],
 
-    // Official : https://vuepress.vuejs.org/plugin/official/plugin-pwa.html#options
-    updatePopup: 'True',
-
-    // Official : https://vuepress.vuejs.org/theme/default-theme-config.html#sidebar
-    themeConfig: {
-        nav: [
-            { text: 'Home', link: '/' },
-            {
-                text: 'Contribution',
-                items: [
-                    {
-                        text: 'Contribute', items: [
-                            { text: 'Report a problem', link: 'https://github.com/Kuma-Cheatsheet/sql/issues/' },
-                            { text: 'Request new resource', link: 'https://github.com/Kuma-Cheatsheet/sql/issues/' },
-                            { text: 'Contribute new resource', link: 'https://github.com/Kuma-Cheatsheet/sql/' },
-                            { text: 'Development Board', link: 'https://github.com/Kuma-Cheatsheet/sql/projects' },
-                        ]
-                    },
-                    {
-                        text: 'Guidelines', items: [
-                            { text: 'Contribution Guidelines', link: 'https://github.com/Kuma-Cheatsheet/sql/blob/master/CONTRIBUTING.md' },
-                            { text: 'Licensing', link: 'https://github.com/Kuma-Cheatsheet/sql/https://github.com/Kuma-Cheatsheet/sql/blob/master/LICENSE.md/' },
-                        ]
-                    },
-                ]
-            },
-            {
-                text: 'Other Cheatsheet',
-                items: [
-                    {
-                        text: 'Programming Languages', items: [
-                            { text: 'Python', link: 'http://kuma-cheatsheet.github.io/python' },
-                            { text: 'SQL', link: 'http://kuma-cheatsheet.github.io/sql' },
-                        ]
-                    },
-                    {
-                        text: 'Tools', items: [
-                            { text: 'SPSS', link: 'http://kuma-cheatsheet.github.io/spss' },
-                            { text: 'Git', link: 'http://kuma-cheatsheet.github.io/git' },
-                        ]
-                    },
-                    {
-                        text: 'Diagrams', items: [
-                            { text: 'Class Diagram (UML)', link: 'http://kuma-cheatsheet.github.io/class-diagram' },
-                        ]
-                    },
-                    {
-                        text: 'Others', items: [
-                            { text: 'See all', link: 'https://github.com/Kuma-Cheatsheet' },
-                        ]
-                    }
-                ]
-            },
-            {
-                // All child cheatsheet can ignore this if there is no good documentation
-                text: 'Documentation',
-                items: [
-                    { text: 'Official', link: 'https://dev.mysql.com/doc/' },
-                    { text: 'DevDocs', link: 'https://devdocs.io/' },
-                ]
-            },
-        ],
-
-        sidebar: [
-            // Official : https://vuepress.vuejs.org/theme/default-theme-config.html#sidebar
-            {
-                title: 'Overall',
-                collapsable: false,
-                children: [
-                    'Overall/Command/',
-                    'Overall/DataType/',
-                ]
-            },
-            {
-                title: 'Basic Query',
-                collapsable: false,
-                children: [
-                    '/Select/',
-                    '/Where/',
-                ]
-            },
-            {
-                title: 'Merging Tables',
-                collapsable: false,
-                children: [
-                    '/Join/Inner/',
-                    '/Join/Outer/',
-                    '/Group/',
-                ]
-            },
-            {
-                title: 'Modifying Rows',
-                collapsable: false,
-                children: [
-                    '/Insert/',
-                    '/Update/',
-                    '/Delete/',
-                ]
-            },
-            {
-                title: 'Modifying Columns',
-                collapsable: false,
-                children: [
-                    '/Alter/Add/',
-                    '/Alter/Modify/',
-                    '/Alter/Drop/'
-                ]
-            },
-            {
-                title: 'Tables',
-                collapsable: false,
-                children: [
-                    '/Create/',
-                    '/Rename/',
-                    '/Drop/',
-                    '/Describe/',
-                ]
-            },
-            {
-                title: 'Transaction Control',
-                collapsable: false,
-                children: [
-                    '/Commit/',
-                    '/Rollback/',
-                    '/Savepoint/',
-                ]
-            },
-        ],
-
-        // Official : https://vuepress.vuejs.org/theme/default-theme-config.html#last-updated
-        lastUpdated: 'อับเดทล่าสุด',
-
-        // Official : https://vuepress.vuejs.org/theme/default-theme-config.html#service-worker
-        serviceWorker: {
-            updatePopup: true,
+    // Editing header for each language
+    locales: {
+        '/': {
+            lang: 'en-US',
+            title: 'Kuma Cheatsheet',
+            description: 'Cheatsheet for all',
         },
-    }
+        '/th/': {
+            lang: 'th-TH',
+            title: 'Kuma Cheatsheet',
+            description: 'Cheatsheet for all',
+        },
+    },
+
+    // Editing themes
+    // Official : https://vuepress.vuejs.org/theme/default-theme-config.html
+    themeConfig: {
+        // Supports of mulitple languages
+        // https://vuepress.vuejs.org/guide/i18n.html#default-theme-i18n-config
+        locales: {
+
+            // [Default] English Language
+            '/': {
+                selectText: 'Languages',
+                label: 'English',
+                // Official : https://vuepress.vuejs.org/theme/default-theme-config.html#service-worker
+                serviceWorker: {
+                    // When there is website version, notify user
+                    updatePopup: {
+                        // Official : https://vuepress.vuejs.org/plugin/official/plugin-pwa.html#options
+                        message: "New update of this website is available",
+                        buttonText: "OK",
+                    }
+                },
+
+                nav: [
+                    { text: 'Home', link: '/' },
+                    {
+                        text: 'Other Cheatsheet', items: [
+                            {
+                                text: 'Languages', items: [
+                                    { text: 'Python', link: 'http://kuma-cheatsheet.github.io/python' },
+                                    { text: 'SQL', link: 'http://kuma-cheatsheet.github.io/sql' },
+                                ]
+                            },
+                            {
+                                text: 'Tools', items: [
+                                    { text: 'SPSS', link: 'http://kuma-cheatsheet.github.io/spss' },
+                                    { text: 'Git', link: 'http://kuma-cheatsheet.github.io/git' },
+                                ]
+                            },
+                            {
+                                text: 'Diagrams & Algorithms', items: [
+                                    { text: 'Class Diagram (UML)', link: 'http://kuma-cheatsheet.github.io/class-diagram' },
+                                ]
+                            },
+                            {
+                                text: 'Others', items: [
+                                    { text: 'See all', link: 'https://github.com/Kuma-Cheatsheet' },
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        text: 'Contribute & Others', items: [
+                            {
+                                text: 'Contribute', items: [
+                                    { text: 'Create new Issue', link: 'https://github.com/Kuma-Cheatsheet/core/issues/' },
+                                    { text: 'Contribute to Cheatsheet', link: 'https://github.com/Kuma-Cheatsheet/core/' },
+                                    { text: 'Development Board', link: 'https://github.com/Kuma-Cheatsheet/core/projects' },
+                                ]
+                            },
+                            {
+                                text: 'Guidelines', items: [
+                                    { text: 'Contribution Guidelines', link: 'https://kuma-cheatsheet.github.io/Guidelines/' },
+                                    { text: 'Legal Terms', link: 'https://github.com/Kuma-Cheatsheet/core/blob/master/LICENSE.md' },
+                                ]
+                            },
+                            {
+                                text: 'Release + Version', items: [
+                                    { text: 'Changelog', link: 'https://github.com/Kuma-Cheatsheet/core/commits/master' },
+                                    { text: 'List of Contributor', link: 'https://github.com/Kuma-Cheatsheet/core/pulse' },
+                                    { text: 'Development Milestones', link: 'https://github.com/Kuma-Cheatsheet/core/releases' },
+                                ]
+                            },
+                            {
+                                text: 'Supplement Resources', items: [
+                                    // All child cheatsheet can ignore this if there is no good documentation
+                                    { text: 'Official', link: '' },
+                                    { text: 'DevDocs', link: '' },
+                                ]
+                            },
+                        ]
+                    },
+                ],
+
+                sidebar: [
+                    // Official : https://vuepress.vuejs.org/theme/default-theme-config.html#sidebar
+                    {
+                        title: 'Overall',
+                        collapsable: false,
+                        children: [
+                            'Overall/Command/',
+                            'Overall/DataType/',
+                        ]
+                    },
+                    {
+                        title: 'Basic Query',
+                        collapsable: false,
+                        children: [
+                            '/Select/',
+                            '/Where/',
+                        ]
+                    },
+                    {
+                        title: 'Merging Tables',
+                        collapsable: false,
+                        children: [
+                            '/Join/Inner/',
+                            '/Join/Outer/',
+                            '/Group/',
+                        ]
+                    },
+                    {
+                        title: 'Modifying Rows',
+                        collapsable: false,
+                        children: [
+                            '/Insert/',
+                            '/Update/',
+                            '/Delete/',
+                        ]
+                    },
+                    {
+                        title: 'Modifying Columns',
+                        collapsable: false,
+                        children: [
+                            '/Alter/Add/',
+                            '/Alter/Modify/',
+                            '/Alter/Drop/'
+                        ]
+                    },
+                    {
+                        title: 'Tables',
+                        collapsable: false,
+                        children: [
+                            '/Create/',
+                            '/Rename/',
+                            '/Drop/',
+                            '/Describe/',
+                        ]
+                    },
+                    {
+                        title: 'Transaction Control',
+                        collapsable: false,
+                        children: [
+                            '/Commit/',
+                            '/Rollback/',
+                            '/Savepoint/',
+                        ]
+                    },
+                ],
+
+                // Official : https://vuepress.vuejs.org/theme/default-theme-config.html#last-updated
+                lastUpdated: 'อับเดทล่าสุด',
+            },
+
+            // Thai Language
+            '/th/': {
+                selectText: 'ภาษา',
+                label: 'ภาษาไทย',
+                // Official : https://vuepress.vuejs.org/theme/default-theme-config.html#service-worker
+                serviceWorker: {
+                    // When there is website version, notify user
+                    updatePopup: {
+                        // Official : https://vuepress.vuejs.org/plugin/official/plugin-pwa.html#options
+                        message: "New update of this website is available",
+                        buttonText: "OK",
+                    }
+                },
+
+                nav: [
+                    { text: 'หน้าแรก', link: '/' },
+                    {
+                        text: 'ชีทสรุปอื่นๆ', items: [
+                            {
+                                text: 'Languages', items: [
+                                    { text: 'Python', link: 'http://kuma-cheatsheet.github.io/python' },
+                                    { text: 'SQL', link: 'http://kuma-cheatsheet.github.io/sql' },
+                                ]
+                            },
+                            {
+                                text: 'Tools', items: [
+                                    { text: 'SPSS', link: 'http://kuma-cheatsheet.github.io/spss' },
+                                    { text: 'Git', link: 'http://kuma-cheatsheet.github.io/git' },
+                                ]
+                            },
+                            {
+                                text: 'Diagrams & Algorithms', items: [
+                                    { text: 'Class Diagram (UML)', link: 'http://kuma-cheatsheet.github.io/class-diagram' },
+                                ]
+                            },
+                            {
+                                text: 'Others', items: [
+                                    { text: 'See all', link: 'https://github.com/Kuma-Cheatsheet' },
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        text: 'สนับสนุน & อื่นๆ', items: [
+                            {
+                                text: 'Contribute', items: [
+                                    { text: 'Create new Issue', link: 'https://github.com/Kuma-Cheatsheet/core/issues/' },
+                                    { text: 'Contribute to Cheatsheet', link: 'https://github.com/Kuma-Cheatsheet/core/' },
+                                    { text: 'Development Board', link: 'https://github.com/Kuma-Cheatsheet/core/projects' },
+                                ]
+                            },
+                            {
+                                text: 'Guidelines', items: [
+                                    { text: 'Contribution Guidelines', link: 'https://kuma-cheatsheet.github.io/Guidelines/' },
+                                    { text: 'Legal Terms', link: 'https://github.com/Kuma-Cheatsheet/core/blob/master/LICENSE.md' },
+                                ]
+                            },
+                            {
+                                text: 'Release + Version', items: [
+                                    { text: 'Changelog', link: 'https://github.com/Kuma-Cheatsheet/core/commits/master' },
+                                    { text: 'List of Contributor', link: 'https://github.com/Kuma-Cheatsheet/core/pulse' },
+                                    { text: 'Development Milestones', link: 'https://github.com/Kuma-Cheatsheet/core/releases' },
+                                ]
+                            },
+                            {
+                                text: 'เนื้อหาเพิ่มเติม', items: [
+                                    // All child cheatsheet can ignore this if there is no good documentation
+                                    { text: 'Official', link: '' },
+                                    { text: 'DevDocs', link: '' },
+                                ]
+                            },
+                        ]
+                    },
+                ],
+
+                sidebar: [
+                    // Official : https://vuepress.vuejs.org/theme/default-theme-config.html#sidebar
+                    {
+                        title: 'Overall',
+                        collapsable: false,
+                        children: [
+                            '/th/Overall/Command/',
+                            '/th/Overall/DataType/',
+                        ]
+                    },
+                    {
+                        title: 'Basic Query',
+                        collapsable: false,
+                        children: [
+                            '/th/Select/',
+                            '/th/Where/',
+                        ]
+                    },
+                    {
+                        title: 'Merging Tables',
+                        collapsable: false,
+                        children: [
+                            '/th/Join/Inner/',
+                            '/th/Join/Outer/',
+                            '/th/Group/',
+                        ]
+                    },
+                    {
+                        title: 'Modifying Rows',
+                        collapsable: false,
+                        children: [
+                            '/th/Insert/',
+                            '/th/Update/',
+                            '/th/Delete/',
+                        ]
+                    },
+                    {
+                        title: 'Modifying Columns',
+                        collapsable: false,
+                        children: [
+                            '/th/Alter/Add/',
+                            '/th/Alter/Modify/',
+                            '/th/Alter/Drop/'
+                        ]
+                    },
+                    {
+                        title: 'Tables',
+                        collapsable: false,
+                        children: [
+                            '/th/Create/',
+                            '/th/Rename/',
+                            '/th/Drop/',
+                            '/th/Describe/',
+                        ]
+                    },
+                    {
+                        title: 'Transaction Control',
+                        collapsable: false,
+                        children: [
+                            '/th/Commit/',
+                            '/th/Rollback/',
+                            '/th/Savepoint/',
+                        ]
+                    },
+                ],
+
+                    // Official : https://vuepress.vuejs.org/theme/default-theme-config.html#last-updated
+                    lastUpdated: 'อับเดทล่าสุด',
+            },
+        },
+    },
 }
