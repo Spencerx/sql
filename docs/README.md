@@ -1,6 +1,4 @@
-# Welcome to core
-This is the core of all cheatsheet.
+# Welcome to SQL cheatsheet
+ใน cheatsheet นี้ เราได้รวมการใช้งานภาษา SQL ทั่วไป เพื่อให้สามารถนำไปใช้ได้กับ MySQL, PostgreSQL, LiteSQL และอิ่นๆ ได้อีกมากมาย
 
-If you would like to contribute and distrobute it through all cheatsheet, please make sure you are following the `CONTRIBUTE.md` guidelines. We will be updating it constantly.
-
-This vuepress is working on version 0.14.4 and we are ready to move up to 1.0 very soon.
+หากเพื่อนๆต้องการที่จะพัฒนา cheatsheet นี้ ก็สามารถช่วยได้ โดยการสร้าง Pull Request (เรียนรู้วิธีการช่วย contribute ได้ดังนี้)

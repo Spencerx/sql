@@ -1,10 +1,10 @@
 module.exports = {
     // Make sure that base + repo are in correct cheatsheet
-    base: '/core/',
-    title: 'Kuma Cheatsheet Core',
-    description: 'Core of all cheatsheet',
+    base: '/sql/',
+    title: 'SQL Cheatsheet',
+    description: 'Cheatsheet for SQL',
 
-    repo: 'Kuma-Cheatsheet/core',
+    repo: 'Kuma-Cheatsheet/sql',
     repoLabel: 'Repository',
     editLinks: true,
     editLinkText: 'Help us improve this page!',
@@ -46,16 +46,16 @@ module.exports = {
                 items: [
                     {
                         text: 'Contribute', items: [
-                            { text: 'Report a problem', link: 'https://github.com/Kuma-Cheatsheet/core/issues/' },
-                            { text: 'Request new resource', link: 'https://github.com/Kuma-Cheatsheet/core/issues/' },
-                            { text: 'Contribute new resource', link: 'https://github.com/Kuma-Cheatsheet/core/' },
-                            { text: 'Development Board', link: 'https://github.com/Kuma-Cheatsheet/core/projects' },
+                            { text: 'Report a problem', link: 'https://github.com/Kuma-Cheatsheet/sql/issues/' },
+                            { text: 'Request new resource', link: 'https://github.com/Kuma-Cheatsheet/sql/issues/' },
+                            { text: 'Contribute new resource', link: 'https://github.com/Kuma-Cheatsheet/sql/' },
+                            { text: 'Development Board', link: 'https://github.com/Kuma-Cheatsheet/sql/projects' },
                         ]
                     },
                     {
                         text: 'Guidelines', items: [
-                            { text: 'Contribution Guidelines', link: 'https://github.com/Kuma-Cheatsheet/core/blob/master/CONTRIBUTING.md' },
-                            { text: 'Licensing', link: 'https://github.com/Kuma-Cheatsheet/core/https://github.com/Kuma-Cheatsheet/core/blob/master/LICENSE.md/' },
+                            { text: 'Contribution Guidelines', link: 'https://github.com/Kuma-Cheatsheet/sql/blob/master/CONTRIBUTING.md' },
+                            { text: 'Licensing', link: 'https://github.com/Kuma-Cheatsheet/sql/https://github.com/Kuma-Cheatsheet/sql/blob/master/LICENSE.md/' },
                         ]
                     },
                 ]
@@ -91,14 +91,76 @@ module.exports = {
                 // All child cheatsheet can ignore this if there is no good documentation
                 text: 'Documentation',
                 items: [
-                    { text: 'Official', link: '' },
-                    { text: 'DevDocs', link: 'https://devdocs.io/markdown' },
+                    { text: 'Official', link: 'https://dev.mysql.com/doc/' },
+                    { text: 'DevDocs', link: 'https://devdocs.io/' },
                 ]
             },
         ],
 
         sidebar: [
             // Official : https://vuepress.vuejs.org/theme/default-theme-config.html#sidebar
+            {
+                title: 'Overall',
+                collapsable: false,
+                children: [
+                    'Overall/Command/',
+                    'Overall/DataType/',
+                ]
+            },
+            {
+                title: 'Basic Query',
+                collapsable: false,
+                children: [
+                    '/Select/',
+                    '/Where/',
+                ]
+            },
+            {
+                title: 'Merging Tables',
+                collapsable: false,
+                children: [
+                    '/Join/Inner/',
+                    '/Join/Outer/',
+                    '/Group/',
+                ]
+            },
+            {
+                title: 'Modifying Rows',
+                collapsable: false,
+                children: [
+                    '/Insert/',
+                    '/Update/',
+                    '/Delete/',
+                ]
+            },
+            {
+                title: 'Modifying Columns',
+                collapsable: false,
+                children: [
+                    '/Alter/Add/',
+                    '/Alter/Modify/',
+                    '/Alter/Drop/'
+                ]
+            },
+            {
+                title: 'Tables',
+                collapsable: false,
+                children: [
+                    '/Create/',
+                    '/Rename/',
+                    '/Drop/',
+                    '/Describe/',
+                ]
+            },
+            {
+                title: 'Transaction Control',
+                collapsable: false,
+                children: [
+                    '/Commit/',
+                    '/Rollback/',
+                    '/Savepoint/',
+                ]
+            },
         ],
 
         // Official : https://vuepress.vuejs.org/theme/default-theme-config.html#last-updated
