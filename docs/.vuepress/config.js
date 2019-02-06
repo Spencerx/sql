@@ -280,62 +280,62 @@ module.exports = {
                         title: 'Overall',
                         collapsable: false,
                         children: [
-                            '/th/Overall/Command/',
-                            '/th/Overall/DataType/',
+                            'Overall/Command/',
+                            'Overall/DataType/',
                         ]
                     },
                     {
                         title: 'Basic Query',
                         collapsable: false,
                         children: [
-                            '/th/Select/',
-                            '/th/Where/',
+                            '/Select/',
+                            '/Where/',
                         ]
                     },
                     {
                         title: 'Merging Tables',
                         collapsable: false,
                         children: [
-                            '/th/Join/Inner/',
-                            '/th/Join/Outer/',
-                            '/th/Group/',
+                            '/Join/Inner/',
+                            '/Join/Outer/',
+                            '/Group/',
                         ]
                     },
                     {
                         title: 'Modifying Rows',
                         collapsable: false,
                         children: [
-                            '/th/Insert/',
-                            '/th/Update/',
-                            '/th/Delete/',
+                            '/Insert/',
+                            '/Update/',
+                            '/Delete/',
                         ]
                     },
                     {
                         title: 'Modifying Columns',
                         collapsable: false,
                         children: [
-                            '/th/Alter/Add/',
-                            '/th/Alter/Modify/',
-                            '/th/Alter/Drop/'
+                            '/Alter/Add/',
+                            '/Alter/Modify/',
+                            '/Alter/Drop/'
                         ]
                     },
                     {
                         title: 'Tables',
                         collapsable: false,
                         children: [
-                            '/th/Create/',
-                            '/th/Rename/',
-                            '/th/Drop/',
-                            '/th/Describe/',
+                            '/Create/',
+                            '/Rename/',
+                            '/Drop/',
+                            '/Describe/',
                         ]
                     },
                     {
                         title: 'Transaction Control',
                         collapsable: false,
                         children: [
-                            '/th/Commit/',
-                            '/th/Rollback/',
-                            '/th/Savepoint/',
+                            '/Commit/',
+                            '/Rollback/',
+                            '/Savepoint/',
                         ]
                     },
                 ],

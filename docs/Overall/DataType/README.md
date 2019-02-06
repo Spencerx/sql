@@ -1,18 +1,20 @@
 # Lists of SQL Data Type
 
+::: warning
+Each SQL language have different data types. Some have more, some have less.<br>
+Make sure you read the documentation first<br>
+:::
+
+## Basic Data Type
 |Data type|Description|
 |-|-|
-|CHAR(size)|Holds a fixed length string (can contain letters, numbers, and special characters). The fixed |size is specified in parenthesis. Can store up to 255 characters
-|VARCHAR(size)|Holds a variable length string (can contain letters, numbers, and special characters). The |maximum size is specified in parenthesis. Can store up to 255 characters. Note: If you put a greater value than 255 it will be converted to a TEXT type
-|TINYTEXT|Holds a string with a maximum length of 255 characters|
-|TEXT|Holds a string with a maximum length of 65,535 characters|
-|BLOB|For BLOBs (Binary Large OBjects). Holds up to 65,535 bytes of data|
-|MEDIUMTEXT|Holds a string with a maximum length of 16,777,215 characters|
-|MEDIUMBLOB|For BLOBs (Binary Large OBjects). Holds up to 16,777,215 bytes of data|
-|LONGTEXT|Holds a string with a maximum length of 4,294,967,295 characters|
-|LONGBLOB|For BLOBs (Binary Large OBjects). Holds up to 4,294,967,295 bytes of data|
-|ENUM(x,y,z,etc.)|Let you enter a list of possible values. You can list up to 65535 values in an ENUM list. |If a value is inserted that is not in the list, a blank value will be inserted.
+|**CHAR**<br>`CHAR(size)`|Holds a **fixed length string**.<br>The fixed size is specified in parenthesis.<br>Can store up to 255 characters
+|**VARCHAR**<br>`VARCHAR(size)`|Holds a **variable length string**.<br>The maximum size is specified in parenthesis.<br>Can store up to 255 characters.|
+|**TEXT**<br>`TEXT`|Holds a string with a maximum length of 65,535 characters|
+|**ENUM**<br>`ENUM(x,y,z,etc.)`|Let you enter a list of possible values.<br>You can list up to 65,535 values in an ENUM list.<br>If a value is inserted that is not in the list, a blank value will be inserted.|
+
 Note: The values are sorted in the order you enter them.
 
-You enter the possible values in this format: ENUM('X','Y','Z')
-SET	Similar to ENUM except that SET may contain up to 64 list items and can store more than one choice
+## MySQL Data Type
+|Data type|Description|
+|-|-|
