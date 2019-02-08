@@ -15,13 +15,13 @@
 | **ALTER** TABLE<br>Edit table column attributes| `ALTER TABLE [table_Name]` +<br> `ADD [column_name] [data_type];` or<br> `ALTER COLUMN [column_name] [data_type];` or<br> `DROP [column_name] [data_type];` |
 | **DROP** TABLE<br>Delete the table from existence<br><br>*similar : `DELETE`*| `DROP TABLE [table_name];` ||
 
-## Data Grouping
+## Data grouping
 | Query | Usage | Requirements | Optional Modifier |
 | ----- | ----- | ------------ | ----------------- |
 | **GROUP** BY<br>Choose the group that will do the group function| `GROUP BY [column_name]` | `SELECT` & `FROM` & Column functions | `HAVING` |
 | **HAVING**<br>Allows GROUP to have some arguments| `HAVING [arguments]`  | `GROUP` | |
 
-## Manipulating a Data
+## Manipulating a data
 | Query | Usage | Requirements | 
 | ----- | ----- | ------------ | 
 | **INSERT** INTO<br>Add new column to table| `INSERT INTO [table_name]` | `VALUES [column_values]` | 
@@ -41,7 +41,7 @@
 | **RENAME**<br>Rename a table name|`RENAME [table_name] [new_table_name]` |   
 | **SET INTEGRITY**<br>Set Foreign Key Integrity Rule|`SET FOREIGN_KEY_CHECKS =  [true / false]` | 
 
-## Transaction Control
+## Transaction control
 | Query | Usage | 
 | ----- | ----- | 
 | **COMMIT**<br>Commit all transactions created from last checkpoint|`COMMIT` |

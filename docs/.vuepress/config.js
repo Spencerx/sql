@@ -37,13 +37,13 @@ module.exports = {
     locales: {
         '/': {
             lang: 'en-US',
-            title: 'Kuma Cheatsheet',
-            description: 'Cheatsheet for all',
+            title: 'SQL Cheatsheet',
+            description: 'SQL cheat sheet from Kuma Cheatsheet',
         },
         '/th/': {
             lang: 'th-TH',
-            title: 'Kuma Cheatsheet',
-            description: 'Cheatsheet for all',
+            title: 'ชีทสรุป SQL',
+            description: 'ชีทสรุปภาษา SQL จาก Kuma Cheatsheet',
         },
     },
 
