@@ -1,42 +1,37 @@
 # SELECT & FROM
-```sql
-SELECT [column_name] FROM [table_name]
-```
 
-## Select all from table
-```sql
-SELECT * FROM employee
-```
+## Syntax
+<<< @/code/Select/select-usage.sql
 
-## Select some column from table
-```sql
-SELECT first_name, last_name FROM employee
-```
+## Select result based on column selection
+To choose an column to be shown as the result of the query, SELECT is used.
+
+### Select all from table
+To select all columns from the table, use `*` as the column name.
+
+<<< @/code/Select/select-all-employee.sql
+
+### Select some column from table
+To choose the column to show, type in the column name and separate it with commas
+
+<<< @/code/Select/select-some-employee.sql
 
 ## Select `DISTINCT` column
-```sql
-SELECT DISTINCT salary FROM employee
-```
+<<< @/code/Select/select-distinct-employee.sql
 
 the result will not have duplicates (because using `DISTINCT` keyword)
 
-## Modify the result with calculations
-```sql
-SELECT salary, salary * 100 FROM employee
-```
+### Modify the result with calculations
+<<< @/code/Select/select-calculation-employee.sql
 
 and that will show the salary column and the column that is a value of the salary times 100.
 
-## Temporary change column name with `AS`
-```sql
-SELECT first_name AS `First Name` FROM employee
-```
+## Change column name
+### Temporary change column name with `AS`
+<<< @/code/Select/select-as-employee.sql
 
 `AS` keyword also can be skipped.
 NOTE : use backslash \` to marked it as a string
 
-
-## Use `CONCAT` to merge row-column value
-```sql
-SELECT concat(last_name, ' is a ', job_id) AS `Employee Details` FROM employee
-```
+### Use `CONCAT` to merge row-column value
+<<< @/code/Select/select-concat-employee.sql

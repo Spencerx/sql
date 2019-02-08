@@ -140,7 +140,7 @@ module.exports = {
                         ]
                     },
                     {
-                        title: 'Basic Query',
+                        title: 'Querying data',
                         collapsable: false,
                         children: [
                             '/Select/',
@@ -148,34 +148,7 @@ module.exports = {
                         ]
                     },
                     {
-                        title: 'Merging Tables',
-                        collapsable: false,
-                        children: [
-                            '/Join/Inner/',
-                            '/Join/Outer/',
-                            '/Group/',
-                        ]
-                    },
-                    {
-                        title: 'Modifying Rows',
-                        collapsable: false,
-                        children: [
-                            '/Insert/',
-                            '/Update/',
-                            '/Delete/',
-                        ]
-                    },
-                    {
-                        title: 'Modifying Columns',
-                        collapsable: false,
-                        children: [
-                            '/Alter/Add/',
-                            '/Alter/Modify/',
-                            '/Alter/Drop/'
-                        ]
-                    },
-                    {
-                        title: 'Tables',
+                        title: 'Managing tables',
                         collapsable: false,
                         children: [
                             '/Create/',
@@ -185,12 +158,64 @@ module.exports = {
                         ]
                     },
                     {
-                        title: 'Transaction Control',
+                        title: 'Manipulating records',
+                        collapsable: false,
+                        children: [
+                            '/Insert/',
+                            '/Update/',
+                            '/Delete/',
+                        ]
+                    },
+                    {
+                        title: 'Modifying columns',
+                        collapsable: false,
+                        children: [
+                            '/Alter/Add/',
+                            '/Alter/Modify/',
+                            '/Alter/Drop/',
+                        ]
+                    },
+                    {
+                        title: 'Data grouping',
+                        collapsable: false,
+                        children: [
+                            '/Group/',
+                            '/GroupFunction/',
+                        ]
+                    },
+                    {
+                        title: 'Merging tables',
+                        collapsable: false,
+                        children: [
+                            '/Join/Inner/CartesianProduct/',
+                            '/Join/Inner/Cross/',
+                            '/Join/Inner/Equijoin/',
+                            '/Join/Inner/Natural/',
+                            '/Join/Inner/Inner/',
+                            '/Join/Outer/Left/',
+                            '/Join/Outer/Right/',
+                            '/Join/Outer/Full/',
+                        ]
+                    },
+                    {
+                        title: 'Transaction control',
                         collapsable: false,
                         children: [
                             '/Commit/',
                             '/Rollback/',
                             '/Savepoint/',
+                        ]
+                    },
+                    {
+                        title: 'Normalization',
+                        collapsable: false,
+                        children: [
+                            '/Normalization/1NF.md',
+                            '/Normalization/2NF.md',
+                            '/Normalization/3NF.md',
+                            '/Normalization/Boyce-CoddNF.md',
+                            '/Normalization/4NF.md',
+                            '/Normalization/5NF.md',
                         ]
                     },
                 ],
@@ -285,7 +310,7 @@ module.exports = {
                         ]
                     },
                     {
-                        title: 'Basic Query',
+                        title: 'Querying data',
                         collapsable: false,
                         children: [
                             '/Select/',
@@ -293,16 +318,22 @@ module.exports = {
                         ]
                     },
                     {
-                        title: 'Merging Tables',
+                        title: 'Merging tables',
                         collapsable: false,
                         children: [
-                            '/Join/Inner/',
-                            '/Join/Outer/',
+                            '/Join/Inner/CartesianProduct/',
+                            '/Join/Inner/Cross/',
+                            '/Join/Inner/Equijoin/',
+                            '/Join/Inner/Natural/',
+                            '/Join/Inner/Inner/',
+                            '/Join/Outer/Left/',
+                            '/Join/Outer/Right/',
+                            '/Join/Outer/Full/',
                             '/Group/',
                         ]
                     },
                     {
-                        title: 'Modifying Rows',
+                        title: 'Manipulating records',
                         collapsable: false,
                         children: [
                             '/Insert/',
@@ -311,7 +342,7 @@ module.exports = {
                         ]
                     },
                     {
-                        title: 'Modifying Columns',
+                        title: 'Modifying columns',
                         collapsable: false,
                         children: [
                             '/Alter/Add/',
@@ -320,7 +351,7 @@ module.exports = {
                         ]
                     },
                     {
-                        title: 'Tables',
+                        title: 'Managing tables',
                         collapsable: false,
                         children: [
                             '/Create/',
@@ -330,7 +361,7 @@ module.exports = {
                         ]
                     },
                     {
-                        title: 'Transaction Control',
+                        title: 'Transaction control',
                         collapsable: false,
                         children: [
                             '/Commit/',
@@ -338,10 +369,22 @@ module.exports = {
                             '/Savepoint/',
                         ]
                     },
+                    {
+                        title: 'Normalization',
+                        collapsable: false,
+                        children: [
+                            '/Normalization/1NF.md',
+                            '/Normalization/2NF.md',
+                            '/Normalization/3NF.md',
+                            '/Normalization/Boyce-CoddNF.md',
+                            '/Normalization/4NF.md',
+                            '/Normalization/5NF.md',
+                        ]
+                    },
                 ],
 
-                    // Official : https://vuepress.vuejs.org/theme/default-theme-config.html#last-updated
-                    lastUpdated: 'อับเดทล่าสุด',
+                // Official : https://vuepress.vuejs.org/theme/default-theme-config.html#last-updated
+                lastUpdated: 'อับเดทล่าสุด',
             },
         },
     },

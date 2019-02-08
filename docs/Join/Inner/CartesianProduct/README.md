@@ -1,4 +1,4 @@
-# Cartesian Product
+# Inner - Cartesian Product
 ```sql
 SELECT * FROM table_1, table_2
 ```

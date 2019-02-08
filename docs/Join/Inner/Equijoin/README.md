@@ -1,4 +1,4 @@
-# Equijoin
+# Inner - Equijoin
 The old style join method.
 ```sql
     SELECT *

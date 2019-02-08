@@ -1,4 +1,4 @@
-# Full Outer Join
+# Outer - Full Outer Join
 ![Select all from Table A and B](https://static1.squarespace.com/static/5732253c8a65e244fd589e4c/t/5744be65c6fc08b3af1b0fbd/1464122985024/?format=300w)
 
 เนื่องจากคำสั่งของ MySQL ไม่มี Full Outer Join อย่างแท้จริง เลยต้องคำนวณด้วยการนำ Left Outer Join มารวม (Union) กับ Right Outer Join เพื่อให้ได้ผลลัพท์เหมือนกับ Full Outer Join
