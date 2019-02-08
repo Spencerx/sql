@@ -1,4 +1,4 @@
-# Cross Join
+# Inner - Cross Join
 ```sql
     SELECT * FROM employees
     CROSS JOIN departments

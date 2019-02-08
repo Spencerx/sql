@@ -1,86 +1,66 @@
 # WHERE
-```sql
-WHERE [argument]
-```
+`WHERE` keywords allows you to add arguments to the query.<br>
+For example, you liked to get the data as First Name is 'John'.
 
-WHERE keyword need to be used with `SELECT` argument
+## Syntax
+<<< @/code/Where/where-usage.sql
 
-```sql
-SELECT first_name FROM employee
-WHERE first_name = 'Jeff';
-```
-## Where met certain criteria
-```sql
-WHERE first_name = 'Jeff';
-```
+## Where in some rows of data
+### Where the column name matched (equals to)
+If you liked to find the rows that have `first_name` as 'Jeff', this is how you write it.
 
-## Using `and` / `or` / `not` with WHERE
-```sql
-SELECT first_name FROM employee
-WHERE first_name = 'John'
-AND last_name = 'Cena'
-AND NOT id = 12;
-```
+<<< @/code/Where/where-equal-employee.sql
+
+### Where the column name is more than / less than
+<<< @/code/Where/where-more-than-employee.sql
+
+### Using `and` / `or` / `not` as argument merging
+<<< @/code/Where/where-and-employee.sql
 
 ## Using `LIKE` in WHERE
-- `%` - represents zero, one, or multiple characters
-- `_` - represents a single character
+The idea of like is like regular expressions in SQL.
+- `%` - represents a wild card for zero, one, or multiple characters
+- `_` - represents a wild card for single character
 
-```sql
-SELECT first_name FROM employee
-WHERE first_name LIKE 'J%'
-```
+Example :<br>
+Wants to get all the employees that have the **first name** that **starts with J**
 
-and it will results in the column that the first name **starts with ‘J’**
+<<< @/code/Where/where-like-1-employee.sql
 
-```sql
-SELECT first_name FROM employee
-WHERE first_name LIKE '%J'
-```
-and it will result in the column that the first name **ends with ‘J’**
+Example :<br>
+Wants to get the result in the column that the first name **starts with ‘J’ and have 4 more alphabet after it**
 
-```sql
-SELECT first_name FROM employee
-WHERE first_name LIKE 'J____'
-```
-and it will result in the column that the first name **starts with ‘J’ and have 4 more alphabet after it**
+<<< @/code/Where/where-like-2-employee.sql
 
-```sql
-SELECT first_name FROM employee
-WHERE first_name LIKE 'J_h_'
-```
-and it will result in the column that the first name **starts with ‘J’ and the third alphabet is ‘h’**
+Example :<br>
+Wants to get the result in the first name **starts with ‘J’ and the third alphabet is ‘h’**
 
-```sql
-SELECT first_name FROM employee
-WHERE first_name LIKE 'J%n'
-```
-and it will result in the column that the first name **starts with ‘J’ and ends with ‘n’**
+<<< @/code/Where/where-like-3-employee.sql
 
+Example :<br>
+Wants to get the result in the first name **starts with ‘J’ and ends with ‘n’**
 
-## Using `IN` in WHERE
-```sql
-SELECT first_name FROM employee
-WHERE first_name IN ('John', 'Jeff')
-```
+<<< @/code/Where/where-like-4-employee.sql
+
+## Using `IN` keyword
+IN keyword is similar result to match. But if one matched in a list, it is a matched and it will be shown in the result.
+
+<<< @/code/Where/where-in-employee.sql
+
 and it will result in the column that the first name **is either ‘John’ or ‘Jeff’**
 
-```sql
-SELECT first_name FROM employee
-WHERE first_name NOT IN ('John', 'Jeff')
-```
-and it will result in the column that the first name **is neither ‘John’ nor ‘Jeff’**
-
-
-## Using `BETWEEN` in WHERE
-```sql
-SELECT [column_name(s)] FROM [table_name]
-WHERE [column_name] BETWEEN [value1] AND [value2];
-```
+## Using `BETWEEN` keyword
 Equivalent to `[value1] <= [column_name] <= [value2]` in Math equation
 
-```sql
-SELECT first_name FROM employee
-WHERE salary BETWEEN 2000 AND 5000
-```
-and it will result in the column that the salary is between 2000 and 5000
+<<< @/code/Where/where-between-usage-employee.sql
+
+Example :<br>
+Show every first_name that salary is between 2000 and 5000
+
+<<< @/code/Where/where-between-employee.sql
+
+
+## Nested WHERE arguments
+
+### Where the cell data is more than computed cell
+<<< @/code/Where/where-more-than-compute-employee.sql

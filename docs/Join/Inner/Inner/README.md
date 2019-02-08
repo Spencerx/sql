@@ -1,4 +1,4 @@
-# INNER JOIN
+# Inner - Inner Join
 
 ## Join with `ON` clause
 ```sql

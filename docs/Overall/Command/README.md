@@ -1,6 +1,6 @@
 # Lists of SQL command
 
-## Choosing data
+## Querying data
 | Query | Usage | Requirements | Optional Modifier |
 | ----- | ----- | ------------ | ----------------- |
 | **SELECT**<br>Choosing a column                  | `SELECT [column_name] ...`                | `FROM`            | `... DISTINCT [column_name]` |
@@ -8,20 +8,20 @@
 | **WHERE**<br>Choosing with arguments             | `... WHERE [arguments]`                   | `SELECT` & `FROM` |                                 |
 | **ORDER BY**<br>Reordering result with arguments | `... ORDER BY [column_name] [ASC / DESC]` | `SELECT` & `FROM` |                                 |
 
-## Manipulate table
+## Manipulating a table
 | Query | Usage | 
 | ----- | ----- |
 | **CREATE** TABLE<br>Create a new table from scratch| `CREATE TABLE [table_name] ( [constraint] [column_name] [data_type] );` | 
-| **ALTER** TABLE<br>Edit table column| `ALTER TABLE [table_Name]` +<br> `ADD [column_name] [data_type];` or<br> `ALTER COLUMN [column_name] [data_type];` or<br> `DROP [column_name] [data_type];` |
+| **ALTER** TABLE<br>Edit table column attributes| `ALTER TABLE [table_Name]` +<br> `ADD [column_name] [data_type];` or<br> `ALTER COLUMN [column_name] [data_type];` or<br> `DROP [column_name] [data_type];` |
 | **DROP** TABLE<br>Delete the table from existence<br><br>*similar : `DELETE`*| `DROP TABLE [table_name];` ||
 
-## Grouping data
+## Data grouping
 | Query | Usage | Requirements | Optional Modifier |
 | ----- | ----- | ------------ | ----------------- |
-| **GROUP** BY<br> | `GROUP BY [column_name]` | `SELECT` & `FROM` & Column functions | `HAVING` |
-| **HAVING**<br>As GROUP argument  | `HAVING [arguments]`  | `GROUP` | |
+| **GROUP** BY<br>Choose the group that will do the group function| `GROUP BY [column_name]` | `SELECT` & `FROM` & Column functions | `HAVING` |
+| **HAVING**<br>Allows GROUP to have some arguments| `HAVING [arguments]`  | `GROUP` | |
 
-## Manipulate Data
+## Manipulating a data
 | Query | Usage | Requirements | 
 | ----- | ----- | ------------ | 
 | **INSERT** INTO<br>Add new column to table| `INSERT INTO [table_name]` | `VALUES [column_values]` | 
@@ -36,14 +36,14 @@
 | **NATURAL JOIN**<br>Automatic finding of merging key<br><br>*similar : `EQUI JOIN`*| `NATURAL JOIN [table_name]`                       | `... ON [currentTable_column_name] = [targetTable_column_name]` or<br>`... USING [key_column_Name]`|
 
 ## Additional table controls
-| Query | Usage | Requirements |
-| ----- | ----- | ------------ |
-| **RENAME**<br>|`RENAME [table_name] [new_table_name]`            |   |
-| **SET INTEGRITY**<br>|`SET FOREIGN_KEY_CHECKS =  [true / false]` |   |
+| Query | Usage | 
+| ----- | ----- | 
+| **RENAME**<br>Rename a table name|`RENAME [table_name] [new_table_name]` |   
+| **SET INTEGRITY**<br>Set Foreign Key Integrity Rule|`SET FOREIGN_KEY_CHECKS =  [true / false]` | 
 
-## Transaction Control
-| Query | Usage | Requirements | 
-| ----- | ----- | ------------ | 
-| **COMMIT**<br>|`COMMIT`                            |   |
-| **ROLLBACK**<br>|`ROLLBACK [checkpoint_name]`      | Must have at least 1 commit |
-| **SAVEPOINT**<br>|`SAVEPOINT [new_savepoint_name]` |   |
+## Transaction control
+| Query | Usage | 
+| ----- | ----- | 
+| **COMMIT**<br>Commit all transactions created from last checkpoint|`COMMIT` |
+| **ROLLBACK**<br>Revert all transactions to last checkpoint|`ROLLBACK [checkpoint_name]` |  
+| **SAVEPOINT**<br>Create a new checkpoint|`SAVEPOINT [new_savepoint_name]` |  
