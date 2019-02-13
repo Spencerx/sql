@@ -1,17 +1,19 @@
 # Lists of SQL command
+These are a list of fundamental SQL command to use.<br>
+If you liked to learn more, go to the cheatsheet that is named the same as the command name. 
 
-## Querying data
+## Retrieving data
 | Query | Usage | Requirements | Optional Modifier |
 | ----- | ----- | ------------ | ----------------- |
-| **SELECT**<br>Choosing a column                  | `SELECT [column_name] ...`                | `FROM`            | `... DISTINCT [column_name]` |
+| **SELECT**<br>Choosing a column                  | `SELECT [column_name] ...`                | `FROM`            | `... DISTINCT [column_name]`<br>`... AS [new_column_name]`<br> `[group_function] ` |
 | **FROM**<br>Choosing a table source              | `... FROM [table_name]`                   | `SELECT`          |                                 |
 | **WHERE**<br>Choosing with arguments             | `... WHERE [arguments]`                   | `SELECT` & `FROM` |                                 |
 | **ORDER BY**<br>Reordering result with arguments | `... ORDER BY [column_name] [ASC / DESC]` | `SELECT` & `FROM` |                                 |
 
-## Manipulating a table
+## Manipulating table (object)
 | Query | Usage | 
 | ----- | ----- |
-| **CREATE** TABLE<br>Create a new table from scratch| `CREATE TABLE [table_name] ( [constraint] [column_name] [data_type] );` | 
+| **CREATE** TABLE<br>Create a new table from scratch | `CREATE TABLE [table_name] ( [constraint] [column_name] [data_type] );` | 
 | **ALTER** TABLE<br>Edit table column attributes| `ALTER TABLE [table_Name]` +<br> `ADD [column_name] [data_type];` or<br> `ALTER COLUMN [column_name] [data_type];` or<br> `DROP [column_name] [data_type];` |
 | **DROP** TABLE<br>Delete the table from existence<br><br>*similar : `DELETE`*| `DROP TABLE [table_name];` ||
 
@@ -21,7 +23,7 @@
 | **GROUP** BY<br>Choose the group that will do the group function| `GROUP BY [column_name]` | `SELECT` & `FROM` & Column functions | `HAVING` |
 | **HAVING**<br>Allows GROUP to have some arguments| `HAVING [arguments]`  | `GROUP` | |
 
-## Manipulating a data
+## Manipulating data
 | Query | Usage | Requirements | 
 | ----- | ----- | ------------ | 
 | **INSERT** INTO<br>Add new column to table| `INSERT INTO [table_name]` | `VALUES [column_values]` | 

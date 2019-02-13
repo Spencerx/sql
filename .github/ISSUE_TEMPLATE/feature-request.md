@@ -1,20 +1,24 @@
-# Issue Creation Template
+# Feature Request Template
+This is the feature request template for the kuma-cheatsheet. We are using this template in all cheatsheet.
 
-## What happened
+You may type in snipplets or bulletin using markdown language.
+
+For more information, see [http://kuma-cheatsheet.github.io](http://kuma-cheatsheet.github.io) for detailed information
+
+## Step 1 : What feature do you like to request
+Please write **only one** feature. If you have more, create more feature request issue. 
 - 
 
-## Ways to reproduce the issue
-1. 
-2. 
-3. 
-
-## Suggestions on fixing the issue
-- 
-
-------------------------------------------------------
 ADDITIONAL NOTES :
 ```
 
 
+<<<<<<< HEAD
 
 ```
+=======
+```
+
+---
+Make sure that you must send the feature request in the correct repository and you are required to be active to answer our further questions. 
+>>>>>>> core/master

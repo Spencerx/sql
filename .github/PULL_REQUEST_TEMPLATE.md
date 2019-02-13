@@ -34,7 +34,15 @@ Yes,
 
 ---
 
-## Step 3 : Additional Information
+## Step 3 : Issue Reference
+Have you fixed any issue on this pull request? If you do, leave all the issue link down below.
+- 
+- 
+- 
+
+---
+
+## Step 4 : Additional Information
 Question : Do you have any information to provide? If so, please type it in the box below :
 
 ```
@@ -46,3 +54,5 @@ If adding a **new feature**, the PR's description must includes:
 - A convincing reason for adding this feature
 - Related documents have been updated
 - Related tests have been updated
+
+You are consent to be list in a lists of contributor and you may be contacted later on further cheatsheet information conflicts. 
