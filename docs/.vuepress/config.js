@@ -210,9 +210,6 @@ module.exports = {
                         ]
                     },
                 ],
-
-                // Official : https://vuepress.vuejs.org/theme/default-theme-config.html#last-updated
-                lastUpdated: 'อับเดทล่าสุด',
             },
 
             // Thai Language
