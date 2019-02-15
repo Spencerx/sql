@@ -1,41 +1,58 @@
-# INSERT INTO
-```sql
-INSERT INTO [table name]
-VALUES ([value1], [value2] ...);
-```
+# INSERT into
+## Syntax
+<<< @/code/Insert/insert-usage.sql
 
-For example
-```sql
-INSERT INTO lab_location(location_id,location_name)
-VALUES (002,'Rayong'),(003,'Ranong');
-```
+## Example One
+Category : `full insert`<br>
+Insert these following data to the `Employees` table.
+|`id`<br>(not `PK`)|`first_name`|`last_name`|`salary`|
+|-|-|-|-|
+|222|'Sam'|'Smith'|200|
 
-If the column name is not given, all of the column will requires data and in a left to right pattern.
-```sql
-INSERT INTO lab_location
-VALUES (002,'Rayong'),(003,'Ranong');
-```
+this is how you write it into SQL format
 
-but the **values need to have the same value size + data type as the table**
+<<< @/code/Insert/insert-example-one.sql
 
-## Insert with `NULL` value
-WARNING : Adding NULL value to the table may result in column / table conflicts
+### Example Two
+Category : `selective insert`<br>
+Insert these following data to the `Employees` table.
+|`id`<br>(`PK`)|`first_name`|`last_name`|`salary`|
+|-|-|-|-|
+||'Sam'|'Smith'|200|
 
-### Implicitly give a Null value
-```sql
-INSERT INTO lab_location(location_id)
-VALUES (002);
-```
-As column `location_name` is not given, data store will store a default of `NULL` value.
+In this case, you will not insert `id` attribute by yourself. (because `AI` constraint) So we have to let that to be blank. 
+
+Now, we have to specify a column to let data to be insert into.
+
+<<< @/code/Insert/insert-example-two.sql
+
+### Example Three
+Category : `explicit null` `selective insert`<br>
+Insert these following data to the `Employees` table.
+|`id`<br>(`PK`)|`first_name`|`last_name`|`salary`|
+|-|-|-|-|
+||'Sam'|'Smith'|200|
+||'Jeff'|'Jeff'||
+
+In this case, some value is not being specified. We must include something to make the script run. 
+
+We can add `Null` to the value, as following
+
+<<< @/code/Insert/insert-example-three.sql
+
+### Example Four
+Category : `implicit null` `selective insert`<br>
+Insert these following data to the `Employees` table.
+|`id`<br>(`PK`)|`first_name`|`last_name`|`salary`|
+|-|-|-|-|
+||'Sam'|'Smith'||
+||'Jeff'|'Jeff'||
+
+In this case, salary is not given but the table have the columns to keep it.
+
+<<< @/code/Insert/insert-example-three.sql
 
 ::: tip Note
-Non given value will retrieve default value.<br>
-    You can set the default value when creating a new table or modifying a column settings.
+If not given any value, SQL will set data value to default value. (Null is default of default value)<br>
+You can set the default value when creating a new table or modifying a column settings.
 :::
-
-### Explicitly give a Null value
-```sql
-INSERT INTO lab_location
-VALUES (002, NULL)
-```
-Explicitly defined that `location_name` to be `NULL` value.
