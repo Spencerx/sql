@@ -1,18 +1,23 @@
 #!/usr/bin/env sh
+# This deploy script is for deploying 
+# the project (as HTML) to GitHub Pages.
+# Make sure that the last line is edited to the repository.
 
-# abort on errors
+# Abort process if fatal error
 set -e
 
-# build + make sure dependencies is installed
+# Installing modules + build the HTML + JS file
 yarn
 yarn docs:build
 
-# navigate into the build output directory
+# Navigate into the build output directory
 cd docs/.vuepress/dist
 
-# if you are deploying to a custom domain
+# Choosing the deployment to a custom domain
 # echo 'www.example.com' > CNAME
 
+
+# Pusing the deployment to GitHub
 git init
 git add -A
 git commit -m 'Website AutoDeploy'
@@ -20,3 +25,4 @@ git commit -m 'Website AutoDeploy'
 git push -f git@github.com:Kuma-Cheatsheet/sql.git master:gh-pages
 
 cd -
+rm -rf node_modules/
