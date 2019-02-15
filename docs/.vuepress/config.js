@@ -128,6 +128,7 @@ module.exports = {
                         children: [
                             'Overall/Command/',
                             'Overall/DataType/',
+                            'Sample-Database/Employees.md'
                         ]
                     },
                     {

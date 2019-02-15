@@ -60,54 +60,63 @@ This time, we choose `id` **and** `first_name` attribute as the table Primary Ke
 Similar to Primary Key, but we have to point the Foreign Key to another table attribute.
 
 ### Example One
-Create a table `Employees` with following columns and data types.<br>
-This time, we must retrieve `salary` attribute from the `Expense` table from `salary` attribute. 
+Create a table `Employees` with following columns and data types.
+
+This time, `workplace_id` attribute is created to let employees know that which `Workplace` are they in by connecting it to `id` attribute (`Workplace` mandatory one---optional many `Employees`)<br>
+But they requires another key (`id`) to identify each employee. Which generates composite key.
+
+So this is how `Employees` table are designed.
 
 | Name | Data Type | PK | AI | UQ | NN | FK | Ref. FK |
 |-|-|-|-|-|-|-|-|
-|id|INT(10)|:ballot_box_with_check:|
-|first_name|VARCHAR(255)|:ballot_box_with_check:|
+|workplace_id|INT(10)|:ballot_box_with_check: with `id`||||:ballot_box_with_check:|Expense(salary)|
+|id|INT(10)|:ballot_box_with_check: with `workplace_id`|
+|first_name|VARCHAR(255)|
 |last_name|VARCHAR(255)|
-|salary|INT(10)|||||:ballot_box_with_check:|Expense(salary)|
+|salary|INT(10)|
 
 <<< @/code/Create/create-example-fk-one.sql
-
-Now the foreign key of `salary` will retrieve data from the `salary` attribute in `Expense` table.
 
 ## Foreign Key additional constraints
 Foreign key might be delete easily, so you can put options on what to do when the record in other table is gone or update
 
+::: warning
+You can choose **only one** option for each one. Choose wisely.
+:::
+
 ### ON DELETE
 When other table record is gone, what do the record in this table do?
 
-::: warning
-You can choose **only one** option. Choose wisely.
-:::
-
 |Option|Syntax|Benefit|
 |-|-|-|
-|No action||Will not allow deletion of that (mother table) row|
-|Cascade|`ON DELETE CASCADE`|will delete dependent row when mother table is deleted|
-|Set Null|`ON DELETE SET NULL`|will set foreign key that cannot be referenced as NULL|
-|Set Default|`ON DELETE SET DEFAULT|The foreign key attribute will set to default value (if specified default value)|
+|No action|`ON DELETE`|Will not allow deletion on parent table|
+|Cascade|`ON DELETE CASCADE`|Will delete the row to the same value as parent|
+|Null|`ON DELETE SET NULL`|Will use null value instead|
+|Default|`ON DELETE SET DEFAULT`|Will use default value instead|
 
-by adding these constraints, the row will delete safely (able to delete normally). If not, the reference integrity will blocked you from deleting the row.
+By adding these constraints, the row will safely delete (able to delete normally). If not, the **reference integrity will blocked you** from deleting the row.
 
 ### ON UPDATE
-When other table record is gone, what do the record in this table do?
-
-::: warning
-You can choose **only one** option. Choose wisely.
-:::
+When other table record get updated, what do the record in this table do?
 
 |Option|Syntax|Benefit|
 |-|-|-|
-|No action||Will not allow deletion of that (mother table) row|
-|Cascade|`ON DELETE CASCADE`|will delete dependent row when mother table is deleted|
-|Set Null|`ON DELETE SET NULL`|will set foreign key that cannot be referenced as NULL|
-|Set Default|`ON DELETE SET DEFAULT|The foreign key attribute will set to default value (if specified default value)|
+|No action|`ON UPDATE`|Will not allow update on parent table|
+|Cascade|`ON UPDATE CASCADE`|Will update the row to the same value as parent|
+|Null|`ON DELETE SET NULL`|Will use null value instead|
+|Default|`ON DELETE SET DEFAULT`|Will use default value instead|
 
 by adding these constraints, the row will delete safely (able to delete normally). If not, the reference integrity will blocked you from deleting the row.
+
+::: tip
+This is a recap for `ON DELETE` and `ON CASCADE`
+|Option|Benefit|
+|-|-|-|
+|No action|the performed update or delete operation in the parent table will fail with an error.|
+|Cascade|same action performed on the referenced values of the parent table will be reflected to the related values in the child table. For example, if the referenced value is deleted in the parent table, all related rows in the child table are also deleted.|
+|Null|if the referenced values in the parent table are deleted or modified, all related values in the child table are set to NULL value.|
+|Default|if the referenced values in the parent table are updated or deleted, the related values in the child table with FOREIGN KEY columns will be set to its default value.|
+:::
 
 ## Adding `NOT NULL` constraints
 ### Example One
