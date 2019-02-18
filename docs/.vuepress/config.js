@@ -25,12 +25,6 @@ module.exports = {
 
         // Official : https://vuepress.vuejs.org/plugin/official/plugin-medium-zoom.html
         ['@vuepress/medium-zoom'],
-
-        // Official : https://vuepress.vuejs.org/plugin/official/plugin-back-to-top.html
-        ['@vuepress/back-to-top'],
-
-        // Official : https://vuepress.vuejs.org/plugin/official/plugin-blog.html
-        ['@vuepress/blog'],
     ],
 
     // Editing header for each language
@@ -50,6 +44,13 @@ module.exports = {
     // Editing themes
     // Official : https://vuepress.vuejs.org/theme/default-theme-config.html
     themeConfig: {
+
+        // https://vuepress.vuejs.org/theme/default-theme-config.html#algolia-search
+        algolia: {
+            apiKey: '',
+            indexName: '',
+        },
+
         // Supports of mulitple languages
         // https://vuepress.vuejs.org/guide/i18n.html#default-theme-i18n-config
         locales: {
