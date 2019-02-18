@@ -1,9 +1,9 @@
 # RENAME 
+RENAME keyword allows you to change table name.
 
-Change the name of the table
-```sql
-RENAME TABLE [old_table_name] TO [new_table_name]
-```
+## Syntax
+<<< @/code/Rename/rename-usage.sql
+
 For example
 ```sql
 RENAME TABLE dept80 TO detail_dept

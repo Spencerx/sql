@@ -2,9 +2,11 @@
 ## Syntax
 <<< @/code/Create/create-syntax.sql
 
-You can find more information about [Data Types]() and [Constraints]() in the following link.
+You can find more information about [Data Types](/Overall/DataType/) and [Constraints](/Overall/Table/) in the following link.
 
-Also, you cannot create a table without a Primary Key.
+::: tip
+Create a table without determining a primary key is not a good idea.
+:::
 
 ## Example
 ### Example One
@@ -107,16 +109,6 @@ When other table record get updated, what do the record in this table do?
 |Default|`ON DELETE SET DEFAULT`|Will use default value instead|
 
 by adding these constraints, the row will delete safely (able to delete normally). If not, the reference integrity will blocked you from deleting the row.
-
-::: tip
-This is a recap for `ON DELETE` and `ON CASCADE`
-|Option|Benefit|
-|-|-|-|
-|No action|the performed update or delete operation in the parent table will fail with an error.|
-|Cascade|same action performed on the referenced values of the parent table will be reflected to the related values in the child table. For example, if the referenced value is deleted in the parent table, all related rows in the child table are also deleted.|
-|Null|if the referenced values in the parent table are deleted or modified, all related values in the child table are set to NULL value.|
-|Default|if the referenced values in the parent table are updated or deleted, the related values in the child table with FOREIGN KEY columns will be set to its default value.|
-:::
 
 ## Adding `NOT NULL` constraints
 ### Example One
