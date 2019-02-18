@@ -1,2 +1,2 @@
-*.sql linguist-detectable=true
-*.md linguist-detectable=true
+code/*.sql linguist-detectable=true
+docs/*.md linguist-detectable=true
