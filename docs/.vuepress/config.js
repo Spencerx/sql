@@ -1,7 +1,18 @@
+// Welcome to the config.js File. 
+// Make sure that these following areas have been edit for each repository
+
+// - base (as kuma-cheatsheet.github.io/[base])
+// - repo
+// - ga (as Google Analytics tracking code)
+// - algolia API code
+// - sidebar (optional) for each language
+
+// and you are should not be edit other lines as they are a template for all cheatsheet.
+
+// For more information, please visit kuma-cheatsheet.github.io for more information.
+
 module.exports = {
-    // Global Variables + Edits
-    // Make sure that base + repo are in correct cheatsheet
-    base: '/core/',
+    base: '/core/', // It should always start and end with a slash.
 
     repo: 'Kuma-Cheatsheet/core',
     repoLabel: 'Repository',
@@ -25,6 +36,13 @@ module.exports = {
 
         // Official : https://vuepress.vuejs.org/plugin/official/plugin-medium-zoom.html
         ['@vuepress/medium-zoom'],
+
+        // Official : https://vuepress.vuejs.org/plugin/official/plugin-google-analytics.html
+        ['@vuepress/google-analytics',
+            {
+                'ga': 'UA-134763793-1' // for example UA-00000000-0
+            }
+        ],
     ],
 
     // Editing header for each language
