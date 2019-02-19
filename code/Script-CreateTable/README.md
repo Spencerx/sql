@@ -1,1 +1,0 @@
-These sample SQL table is fetched from [www.w3resource.com/sql/sql-table.php](https://www.w3resource.com/sql/sql-table.php).

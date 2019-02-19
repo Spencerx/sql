@@ -51,7 +51,7 @@ module.exports = {
         // yarn add -D @vuepress/plugin-google-analytics
         ['@vuepress/google-analytics',
             {
-                'ga': 'UA-134763793-1' // for example UA-00000000-0
+                'ga': 'UA-134763793-2' // for example UA-00000000-0
             }
         ],
     ],
@@ -160,7 +160,6 @@ module.exports = {
                             'Overall/DataType/',
                             'Overall/Table/',
                             'Overall/Relationship/',
-                            'Sample-Database/Employees.md'
                         ]
                     },
                     {
@@ -242,6 +241,20 @@ module.exports = {
                             '/Normalization/5NF.md',
                         ]
                     },
+                    {
+                        title: 'Sample Database',
+                        collapsable: false,
+                        children: [
+                            'Sample-Database/',
+                            'Sample-Database/Countries.md',
+                            'Sample-Database/Departments.md',
+                            'Sample-Database/Employees.md',
+                            'Sample-Database/Job_History.md',
+                            'Sample-Database/Jobs.md',
+                            'Sample-Database/Locations.md',
+                            'Sample-Database/Regions.md'
+                        ]
+                    }
                 ],
             },
 

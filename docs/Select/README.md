@@ -17,6 +17,8 @@ To choose the column to show, type in the column name and separate it with comma
 <<< @/code/Select/select-some-employee.sql
 
 ## Select `DISTINCT` column
+`DISTINCT` keyword is used when you want to get a *unique* values as a output. So the result does not have duplicate values in that selected column(s). 
+
 <<< @/code/Select/select-distinct-employee.sql
 
 the result will not have duplicates (because using `DISTINCT` keyword)
@@ -35,3 +37,7 @@ NOTE : use backslash \` to marked it as a string
 
 ### Use `CONCAT` to merge row-column value
 <<< @/code/Select/select-concat-employee.sql
+
+-----
+#### Resource
+- CodeAcademy [https://www.codecademy.com/courses/learn-sql/lessons/queries/exercises/distinct?action=resume_content_item](https://www.codecademy.com/courses/learn-sql/lessons/queries/exercises/distinct?action=resume_content_item)

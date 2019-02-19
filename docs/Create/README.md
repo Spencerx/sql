@@ -180,7 +180,7 @@ Composite unique requires `first_name` **and** `last_name` to be the same to rej
 |Jeff **Smith**, Sam Mercury, Tom **Smith**|:x:|:o:|
 :::
 
-## Create table from sub-queries
+## Create new table another table
 You can use the queries to create new table by using `as` to join the query together.
 
 ### Example One
