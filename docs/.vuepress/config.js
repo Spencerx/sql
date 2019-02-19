@@ -1,7 +1,18 @@
+// Welcome to the config.js File. 
+// Make sure that these following areas have been edit for each repository
+
+// - base (as kuma-cheatsheet.github.io/[base])
+// - repo
+// - ga (as Google Analytics tracking code)
+// - algolia API code
+// - sidebar (optional) for each language
+
+// and you are should not be edit other lines as they are a template for all cheatsheet.
+
+// For more information, please visit kuma-cheatsheet.github.io for more information.
+
 module.exports = {
-    // Global Variables + Edits
-    // Make sure that base + repo are in correct cheatsheet
-    base: '/sql/',
+    base: '/core/', // It should always start and end with a slash.
 
     repo: 'Kuma-Cheatsheet/sql',
     repoLabel: 'Repository',
@@ -21,10 +32,28 @@ module.exports = {
     // https://vuepress.vuejs.org/plugin/
     plugins: [
         // Official : https://vuepress.vuejs.org/plugin/official/plugin-pwa.html#install
+        // yarn add -D @vuepress/plugin-pwa
         ['@vuepress/pwa'],
 
         // Official : https://vuepress.vuejs.org/plugin/official/plugin-medium-zoom.html
+        // yarn add -D @vuepress/plugin-medium-zoom
         ['@vuepress/medium-zoom'],
+
+        // https://vuepress.vuejs.org/plugin/official/plugin-active-header-links.html
+        // yarn add -D @vuepress/plugin-active-header-links
+        ['@vuepress/active-header-links'],
+
+        // https://vuepress.vuejs.org/plugin/official/plugin-back-to-top.html
+        // yarn add -D @vuepress/plugin-back-to-top
+        ['@vuepress/back-to-top'],
+
+        // Official : https://vuepress.vuejs.org/plugin/official/plugin-google-analytics.html
+        // yarn add -D @vuepress/plugin-google-analytics
+        ['@vuepress/google-analytics',
+            {
+                'ga': 'UA-134763793-1' // for example UA-00000000-0
+            }
+        ],
     ],
 
     // Editing header for each language

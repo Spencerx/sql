@@ -860,12 +860,31 @@
     markdown-it-table-of-contents "^0.4.0"
     prismjs "^1.13.0"
 
+"@vuepress/plugin-active-header-links@^1.0.0-alpha.0":
+  version "1.0.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-active-header-links/-/plugin-active-header-links-1.0.0-alpha.0.tgz#aa127fb5bd5d504fb9cbd65ca5e2fa37fd1cc324"
+  integrity sha512-oB8MJeMh+7LWyaSGRAPPcw6mVfqy+8XP3BgLGrMVFisAhBpAzNgvOrKIzdtbJybRXd25Xt1A6lNglmyg0dYbyg==
+  dependencies:
+    lodash.throttle "^4.1.1"
+
 "@vuepress/plugin-active-header-links@^1.0.0-alpha.18":
   version "1.0.0-alpha.18"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-active-header-links/-/plugin-active-header-links-1.0.0-alpha.18.tgz#dbc87c3ea297adc6774d74ce3f9322d5fa437bcc"
   integrity sha512-L5XInkqmWGcC8RYHXxDmPveYwTxNQhKOUcQzJ4U4Ds7Pw4Tkks/Ff70qx9Q3OTqCtQxTOq76iJBLH8eVgb7L3w==
   dependencies:
     lodash.throttle "^4.1.1"
+
+"@vuepress/plugin-back-to-top@^1.0.0-alpha.0":
+  version "1.0.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-back-to-top/-/plugin-back-to-top-1.0.0-alpha.0.tgz#401513b39d5dd081f49404c35ab6f51002c1cca0"
+  integrity sha512-Ll7AdL/Lnnqft73NVJlnlZQeWurJ4U6dfeBsbcJjnywrldQ3M4nVdXWxXVCpMOILxpIuzEPhS60sudk93rVtgQ==
+  dependencies:
+    lodash.debounce "^4.0.8"
+
+"@vuepress/plugin-google-analytics@^1.0.0-alpha.0":
+  version "1.0.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-google-analytics/-/plugin-google-analytics-1.0.0-alpha.0.tgz#97acb3a512dca9b2b6e4014fa2d58da38e2a01b9"
+  integrity sha512-WNUIayJFBmTb06bjvFeJd5TlT4qoYcCLN15zkEGeAGH8tCH2BtrwMkSG3BiiWSh3xRUy7kDHhsuclSZcRY08EQ==
 
 "@vuepress/plugin-last-updated@^1.0.0-alpha.18":
   version "1.0.0-alpha.18"
