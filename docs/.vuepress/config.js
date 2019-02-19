@@ -32,12 +32,23 @@ module.exports = {
     // https://vuepress.vuejs.org/plugin/
     plugins: [
         // Official : https://vuepress.vuejs.org/plugin/official/plugin-pwa.html#install
+        // yarn add -D @vuepress/plugin-pwa
         ['@vuepress/pwa'],
 
         // Official : https://vuepress.vuejs.org/plugin/official/plugin-medium-zoom.html
+        // yarn add -D @vuepress/plugin-medium-zoom
         ['@vuepress/medium-zoom'],
 
+        // https://vuepress.vuejs.org/plugin/official/plugin-active-header-links.html
+        // yarn add -D @vuepress/plugin-active-header-links
+        ['@vuepress/active-header-links'],
+
+        // https://vuepress.vuejs.org/plugin/official/plugin-back-to-top.html
+        // yarn add -D @vuepress/plugin-back-to-top
+        ['@vuepress/back-to-top'],
+
         // Official : https://vuepress.vuejs.org/plugin/official/plugin-google-analytics.html
+        // yarn add -D @vuepress/plugin-google-analytics
         ['@vuepress/google-analytics',
             {
                 'ga': 'UA-134763793-1' // for example UA-00000000-0
