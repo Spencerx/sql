@@ -1,52 +1,84 @@
 ---
 name: Bug Report
-about: If you found any glitches or bug in the repository, use this template
+about: If you found any glitches or bug in the repository, use this form.
 
 ---
-
 # Bug Report Template
-This is the bug report template for the kuma-cheatsheet. We are using this template in all cheatsheet.
+This is the **bug report** template for the kuma-cheatsheet. We are using this template in all cheatsheet.
 
-You may type in snipplets or bulletin using markdown language.
+For more information, please check out [https://kuma-cheatsheet.github.io](https://kuma-cheatsheet.github.io)
 
-For more information, see [https://kuma-cheatsheet.github.io](https://kuma-cheatsheet.github.io) for detailed information
+Please fill in your answer in a given box below each question. 
 
+-----
 ## Step 1 : What happened
 Please explain precisely what happened and/or caused the problem
 
-- 
+```
+... your answer here ...
 
----
-## Step 2: Ways to reproduce the issue
+
+```
+
+-----
+## Step 2: How to reproduce this issue
 Please explain how do you get this bug and/or cause this bug. 
-1. 
-2. 
-3. 
+```
+... your answer here ...
 
----
+
+```
+
+-----
 ## Step 3 : Expected results
 What does it supposed to show instead of this bug?
 
-- 
+```
+... your answer here ...
 
----
+
+```
+
+-----
 ## Step 4 : Issue environment
-Where did this issue is caused from? 
+Where did this issue is caused from? Please fill in these following questions.
 
-#### Operating System
+### Operating System
 (eg. MacOS Mojave, Windows 10, Ubuntu 18.10)
-- 
 
-#### Internet Browser(s)
+```
+... your answer here ...
+
+
+```
+
+### Internet Browser(s)
 (eg. Safari, Google Chrome)
-- 
 
-#### Cheatsheet release version
+```
+... your answer here ...
+
+
+```
+
+### Cheatsheet release version
 If you don't know, please tell us when is the first time you get this issue
-- 
 
-----
-Make sure that you are sending this issue **for bug** issue only.<br>
+```
+... your answer here ...
+
+
+```
+
+-----
+## Step 5 : Additional Information
+
+Make sure that you are sending this issue **for bug** issue only.
 If you liked to send an issue for features, please use feature template.
 
-Also, make sure that you must send the request in the correct repository and may get asked about this issue. Please stay with us first!
+You might be asked for more information later in the future, if we need to. Thanks!
+
+Please tick the box if you liked to :
+- [ ] Fix this issue by yourself via pull request
+- [ ] Declined us to add your username to the contribution hall of fame
+- [ ] This issue needs to be fix ASAP for the greater good
