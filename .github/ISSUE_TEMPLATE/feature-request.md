@@ -1,3 +1,9 @@
+---
+name: Feature Request
+about: If you liked to see more cheatsheets, please create this issue report.
+
+---
+
 # Feature Request Template
 This is the feature request template for the kuma-cheatsheet. We are using this template in all cheatsheet.
 
@@ -16,4 +22,7 @@ ADDITIONAL NOTES :
 ```
 
 ---
-Make sure that you must send the feature request in the correct repository and you are required to be active to answer our further questions. 
+Make sure that you are sending this issue **for feature** issue only.<br>
+If you liked to send an issue for bug, please use bug report template.
+
+Also, make sure that you must send the feature request in the correct repository and may get asked about this issue. Please stay with us first!
