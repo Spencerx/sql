@@ -1,8 +1,12 @@
 ---
-name: Feature Request
+name: Feature request
 about: If you liked to see more cheatsheet resource, use this form.
+title: "[FEATURE]"
+labels: enhancement
+assignees: sagelga
 
 ---
+
 # Feature Request Template
 This is the **feature request** template for the kuma-cheatsheet. We are using this template in all cheatsheet.
 

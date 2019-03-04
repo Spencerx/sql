@@ -1,8 +1,12 @@
 ---
-name: Bug Report
+name: Bug report
 about: If you found any glitches or bug in the repository, use this form.
+title: "[BUG]"
+labels: bug
+assignees: sagelga
 
 ---
+
 # Bug Report Template
 This is the **bug report** template for the kuma-cheatsheet. We are using this template in all cheatsheet.
 
