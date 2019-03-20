@@ -1,5 +1,4 @@
 # Lists of database definition
-`constraint` `table` `key`
 
 [[toc]]
 ## Primary Key (PK)
@@ -25,6 +24,11 @@ Mostly a system-generated key and have a property of Primary Key
 Create a surrogate key when there is no attribute that is a good key.<br>
 If there is an attribute that is good enough already, don't create surrogate key.
 :::
+
+## Composite / Compound Key
+When there is multiple attributes that helped each other to be row unique.
+
+-----
 
 ## Automatic Incremental (AI)
 For use with Primary Key.<br>
@@ -53,3 +57,8 @@ This is a recap for `ON DELETE` and `ON CASCADE`
 |Cascade|Same action performed on the referenced values of the parent table will be reflected to the related values in the child table|
 |Null|If the referenced values in the parent table are deleted or modified, all related values in the child table are set to NULL value|
 |Default|If the referenced values in the parent table are updated or deleted, the related values in the child table with FOREIGN KEY columns will be set to its default value.|
+
+-----
+
+## Referential Integrity
+The integrity check that checks Foreign Key always point to an existing row.
