@@ -12,7 +12,7 @@
 // For more information, please visit kuma-cheatsheet.github.io for more information.
 
 module.exports = {
-    base: '/core/', // It should always start and end with a slash.
+    base: '/sql/', // It should always start and end with a slash.
 
     repo: 'Kuma-Cheatsheet/sql',
     repoLabel: 'Repository',
@@ -76,8 +76,8 @@ module.exports = {
 
         // https://vuepress.vuejs.org/theme/default-theme-config.html#algolia-search
         algolia: {
-            apiKey: '',
-            indexName: '',
+            apiKey: '05cc66be999161bc11e749422691011e',
+            indexName: 'kuma-cheatsheet_sql',
         },
 
         // Supports of mulitple languages
