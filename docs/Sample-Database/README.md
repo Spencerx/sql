@@ -1,4 +1,4 @@
-# Sample data database model
+# Sample Table Relationship
 
 ![](https://w3resource.com/postgresql-exercises/database-model.gif)
 

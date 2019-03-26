@@ -233,12 +233,11 @@ module.exports = {
                         title: 'Normalization',
                         collapsable: false,
                         children: [
+                            '/Normalization/Introduction.md',
                             '/Normalization/1NF.md',
                             '/Normalization/2NF.md',
                             '/Normalization/3NF.md',
-                            '/Normalization/Boyce-CoddNF.md',
-                            '/Normalization/4NF.md',
-                            '/Normalization/5NF.md',
+                            '/Normalization/BCNF.md',
                         ]
                     },
                     {

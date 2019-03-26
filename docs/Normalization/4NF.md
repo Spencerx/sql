@@ -1,1 +1,0 @@
-# Forth Normal Form (4 NF)
