@@ -1,8 +1,12 @@
-CREATE TABLE locations (
-    location_id numeric(4,0) DEFAULT (0)::numeric NOT NULL,
-    street_address character varying(40) DEFAULT NULL::character varying,
-    postal_code character varying(12) DEFAULT NULL::character varying,
-    city character varying(30) NOT NULL,
-    state_province character varying(25) DEFAULT NULL::character varying,
-    country_id character varying(2) DEFAULT NULL::character varying
+CREATE TABLE Locations (
+    location_id     FLOAT(4,0)      NOT NULL,
+    street_address  VARCHAR(40),
+    postal_code     VARCHAR(12),
+    city            VARCHAR(30)     NOT NULL,
+    state_province  VARCHAR(25),
+    country_id      VARCHAR(2)
 );
+
+ALTER TABLE Locations
+    ADD CONSTRAINT locations_pkey 
+    PRIMARY KEY (location_id);

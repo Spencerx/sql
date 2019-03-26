@@ -51,14 +51,16 @@ Foreign Key is a key that can be used to determined all columns in the table.
 To reference the parent table, *Ref. FK* need to be specified. For example `Employees(id)`. For more information on how to choose where to place Foreign Key at, see [Relationship](/Overall/Relationship/)
 
 This is a recap for `ON DELETE` and `ON CASCADE`
-|Option|Benefit|
-|-|-|-|
-|No action|Performed update or delete operation in the parent table will fail with an error|
-|Cascade|Same action performed on the referenced values of the parent table will be reflected to the related values in the child table|
-|Null|If the referenced values in the parent table are deleted or modified, all related values in the child table are set to NULL value|
-|Default|If the referenced values in the parent table are updated or deleted, the related values in the child table with FOREIGN KEY columns will be set to its default value.|
+| Option    | Benefit                                                                                                                                                               |  |
+|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|
+| No action | Performed update or delete operation in the parent table will fail with an error                                                                                      |  |
+| Cascade   | Same action performed on the referenced values of the parent table will be reflected to the related values in the child table                                         |  |
+| Null      | If the referenced values in the parent table are deleted or modified, all related values in the child table are set to NULL value                                     |  |
+| Default   | If the referenced values in the parent table are updated or deleted, the related values in the child table with FOREIGN KEY columns will be set to its default value. |  |
 
------
+## Surrogate Key
+
+## Composite Key
 
 ## Referential Integrity
 The integrity check that checks Foreign Key always point to an existing row.

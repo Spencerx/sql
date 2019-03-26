@@ -1,4 +1,7 @@
-CREATE TABLE regions (
-    region_id numeric(10,0) NOT NULL,
-    region_name character(25)
+CREATE TABLE Regions (
+    region_id   FLOAT(10,0) NOT NULL,
+    region_name CHAR(25)
 );
+
+ALTER TABLE Regions
+    ADD CONSTRAINT regions_pkey PRIMARY KEY (region_id);

@@ -1,40 +1,25 @@
 # Sample Table - Countries
 
-### Table constraints
-| Attribute Name | [Data Type](/Overall/DataType/) | PK | AI | UQ | NN | FK | Ref. FK |
-|-|-|-|-|-|-|-|-|
-|employee_id|INT(10)|:ballot_box_with_check:|
+## Table constraints
+| Attribute Name | [Data Type][DT] | [PK][PK]                | [AI][AI] | [UQ][UQ] | [NN][NN] | [FK][FK]                | [Ref. FK][RefFK]   |
+|----------------|-----------------|-------------------------|----------|----------|----------|-------------------------|--------------------|
+| country_id     | VARCHAR(2)      | :ballot_box_with_check: |          |          |          |                         |                    |
+| country_name   | VARCHAR(40)     |                         |          |          |          |                         |                    |
+| region_id      | INT             |                         |          |          |          | :ballot_box_with_check: | Regions(region_id) |
+
+[DT]: /Overall/DataType/
+[PK]: /Overall/Table/#primary-key-pk
+[AI]: /Overall/Table/#automatic-incremental-ai
+[UQ]: /Overall/Table/#unique-uq-not-null-nn
+[NN]: /Overall/Table/#unique-uq-not-null-nn
+[FK]: /Overall/Table/#foreign-key-fk
+[RefFK]: /Overall/Table/#reference-foreign-key-ref-fk
 
 <<< @/code/Table-Create-Scripts/Countries.sql
 
-### Data Values
-| country_id | country_name             | region_id |
-|------------|--------------------------|-----------|
-| AR         | Argentina                | 2         |
-| AU         | Australia                | 3         |
-| BE         | Belgium                  | 1         |
-| BR         | Brazil                   | 2         |
-| CA         | Canada                   | 2         |
-| CH         | Switzerland              | 1         |
-| CN         | China                    | 3         |
-| DE         | Germany                  | 1         |
-| DK         | Denmark                  | 1         |
-| EG         | Egypt                    | 4         |
-| FR         | France                   | 1         |
-| HK         | HongKong                 | 3         |
-| IL         | Israel                   | 4         |
-| IN         | India                    | 3         |
-| IT         | Italy                    | 1         |
-| JP         | Japan                    | 3         |
-| KW         | Kuwait                   | 4         |
-| MX         | Mexico                   | 2         |
-| NG         | Nigeria                  | 4         |
-| NL         | Netherlands              | 1         |
-| SG         | Singapore                | 3         |
-| UK         | United Kingdom           | 1         |
-| US         | United States of America | 2         |
-| ZM         | Zambia                   | 4         |
-| ZW         | Zimbabwe                 | 4         |
-| 12         | Belgia                   | Null      |
-| RO         | Romania                  | Null      |
-| BG         | Romania                  | Null      |
+## Data Values
+or download a [CSV file][CSV]
+
+<<< @/code/Table-Values/Countries.sql
+
+[CSV]: https://raw.githubusercontent.com/Kuma-Cheatsheet/sql/master/code/Table-Values/Countries.csv
