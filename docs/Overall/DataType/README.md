@@ -1,11 +1,13 @@
 # Lists of SQL Data Type
-
+<Badge text="MySQL Only" type="warn" vertical="middle"/>
 ::: warning
-Each SQL language have different data types. Some have more, some have less.<br>
-Make sure you read the documentation first<br>
+Each SQL language have different data types and they did not work as the same on each other.<br>
+Make sure you read the documentation before choosing a data type<br>
 :::
 
-## Basic Data Type
+## MySQL data type
+This is only some few data types for MySQL. For full list of MySQL data type, please visit their documentation.
+
 |Data type|Description|
 |-|-|
 |**CHAR**<br>`CHAR(size)`|Holds a **fixed length string**.<br>The fixed size is specified in parenthesis.<br>Can store up to 255 characters
@@ -19,8 +21,6 @@ Make sure you read the documentation first<br>
 |**BOOLEAN**<br>`BOOLEAN`||
 |**DATE**<br>`DATE`||
 |**DATETIME**<br>`DATETIME`||
-
-Note: The values are sorted in the order you enter them.
 
 ---
 ### Reference
