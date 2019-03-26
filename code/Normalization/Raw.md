@@ -1,0 +1,3 @@
+| Title | Author | Author Nationality | Format | Price | Subject | Pages | Thickness | Publisher | Publisher Country | Publication Type | Genre ID | Genre Name |
+|-------|--------|--------------------|--------|-------|---------|-------|-----------|-----------|-------------------|------------------|----------|------------|
+|       |        |                    |        |       |         |       |           |           |                   |                  |          |            |

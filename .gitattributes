@@ -1,2 +1,3 @@
-code/* linguist-detectable=true
-*.md linguist-detectable=true
+code/*  linguist-detectable=true    
+*.md    linguist-detectable=true    
+*       eol=lf

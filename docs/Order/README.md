@@ -7,24 +7,23 @@ ORDER BY keyword sorts the records **in ascending order by default**.
 To sort the records in descending order, use the DESC keyword.
 
 ## Syntax
-```sql
-SELECT [column_name]
-FROM [table_name]
-ORDER BY [column_name] ... [ASC|DESC];
-```
 
-For example
-```sql
-SELECT first_name, last_name, salary
-FROM employee
-ORDER BY first_name, last_name DESC
-```
+<<< @/code/Order/order-usage.sql
+
+## Example One
+Select `first_name`, `last_name` and `salary` and sort by the `first_name` in a descending order.
+
+<<< @/code/Order/order-first-name-descending.sql
+
 This will sort the `first_name` first. If the first_name is duplicated, `last_name` will be used to sort those conflict off.
 
+## Example Two
+Select all customers from the `Customers` table, sorted ascending by the `country` and descending by the `customer_name` column:
 
-The following SQL statement selects all customers from the "Customers" table, sorted ascending by the "Country" and descending by the "CustomerName" column:
+<<< @/code/Order/order-asc-des.sql
 
-```sql
-SELECT * FROM Customers
-ORDER BY Country ASC, CustomerName DESC;
-```
+## Example Three
+
+<<< @/code/Order/order-column-number.sql
+
+In the line `ORDER BY 1` means order by the column number one, which is `employee_id`
