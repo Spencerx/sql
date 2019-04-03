@@ -9,7 +9,7 @@ It is accomplished by applying some formal rules either by a process of synthesi
 If attribute A determines the value of B, we write this A -> B — meaning that B is functionally dependent on A. In this relationship, A determines the value of B, while B depends on A.
 
 ## Full Dependency
-A Candidate Key can tell all of the non-key attribute
+All Candidate Key must determines the value of all non-key attributes.
 
 ## Partial Dependency
 A part of a candidate key (mostly from composite key) can determine a non-key attribute

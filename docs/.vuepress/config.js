@@ -168,6 +168,7 @@ module.exports = {
                         children: [
                             '/Select/',
                             '/Where/',
+                            '/Top/',
                         ]
                     },
                     {
